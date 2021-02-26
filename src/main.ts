@@ -24,9 +24,12 @@ async function bootstrap() {
     app.use(helmet());
     app.use(compression());
 
-    app.enableCors({
-        credentials: true,
-    });
+    if (process.env.NODE_ENV !== 'production') {
+        app.enableCors({
+            origin: true,
+            credentials: true,
+        });
+    }
 
     const document = SwaggerModule.createDocument(app, SWAGGER_OPTIONS);
     SwaggerModule.setup('api-doc', app, document);
