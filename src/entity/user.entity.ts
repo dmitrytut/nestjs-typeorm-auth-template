@@ -1,7 +1,7 @@
 import { BeforeInsert, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 import * as bcrypt from 'bcrypt';
 
-import { IUser } from './interfaces/user.interface';
+import { IUser } from '../modules/user/interfaces/user.interface';
 
 /**
  * Entity 'User'.

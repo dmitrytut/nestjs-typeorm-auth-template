@@ -8,7 +8,7 @@ const newDbConfig: TypeOrmModuleOptions = {
     ...(dbConfig().db as ConnectionOptions),
     migrations: ['src/db/migration/**/*.ts'],
     cli: {
-        entitiesDir: 'src/modules/**/*.entity{.ts,.js}',
+        entitiesDir: 'src/entity/**/*.entity{.ts,.js}',
         migrationsDir: 'src/db/migration',
     },
 };

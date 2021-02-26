@@ -6,7 +6,7 @@ import { dbConfig } from '../config/dbConfig';
 (async () => {
     const connection = await createConnection({
         ...(dbConfig().db as ConnectionOptions),
-        entities: [join(__dirname, '../modules/**/*.entity{.ts,.js}')],
+        entities: [join(__dirname, '../entity/**/*.entity{.ts,.js}')],
         migrations: [join(__dirname, '/migration/*.js')],
         logging: true,
     });

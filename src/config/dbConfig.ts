@@ -6,7 +6,7 @@ interface IDbConfig {
 }
 
 export const dbConfig = (): IDbConfig => {
-    const entitiesRelativePath = process.env.DB_ENTITIES_PATH || '/dist/modules/**/*.entity{.ts,.js}';
+    const entitiesRelativePath = process.env.DB_ENTITIES_PATH || '/dist/entity/**/*.entity{.ts,.js}';
 
     return {
         db: {

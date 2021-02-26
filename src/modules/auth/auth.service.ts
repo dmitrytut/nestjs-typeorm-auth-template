@@ -3,7 +3,7 @@ import { BadRequestException, Injectable, Logger } from '@nestjs/common';
 
 import { CreateUserDto } from '../user/dto/create-user.dto';
 import { UserDto } from '../user/dto/user.dto';
-import { User } from '../user/user.entity';
+import { User } from '../../entity/user.entity';
 import { UserService } from '../user/user.service';
 import { LoginUserDto } from './dto/login-user.dto';
 

@@ -1,5 +1,5 @@
 import { IUser } from '../../../modules/user/interfaces/user.interface';
-import { User } from '../../../modules/user/user.entity';
+import { User } from '../../../entity/user.entity';
 import { IMock } from '../interface/mock.interface';
 
 export const UserMock: IMock<IUser> = {
